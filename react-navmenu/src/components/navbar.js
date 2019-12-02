@@ -6,7 +6,7 @@ function navbar(props) {
       {props.menu.map(el => (
         <li className="dropdown">
           {el.title}
-          {!el.dropdown ? null : (
+          {el.dropdown && (
             <ul className="dropdown-content">
               {el.dropdown.map(el => (
                 <li>{el}</li>
